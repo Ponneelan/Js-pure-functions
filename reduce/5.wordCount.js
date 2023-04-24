@@ -1,18 +1,11 @@
 words = ['ponneelan','maruthu','maruthu','muthu','muthu','ponneelan','muthu'];
 
-
-let obj = {};
 function getCount(a,b){
 
-    if(!(b in obj)){
-        obj[b] = 1;
-    }else{
-        obj[b] += 1; 
-    }
-    return obj;
-    
+    a[b] = (a[b]|| 0) + 1
+    return a;
 }
 
-let count = words.reduce((a,b)=>getCount(a,b),0);
+let wordCount = words.reduce((a,b)=>getCount(a,b),{});
 
-console.log(count);
+console.log(wordCount);
