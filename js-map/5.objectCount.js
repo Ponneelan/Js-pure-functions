@@ -4,7 +4,7 @@ function objcetCount(arr){
         if(!(val.category in obj)){
             obj[val.category] = []
         }
-        obj[val.category].push(val);
+        obj[val.category].push(val.favorite);
     });
     return obj
 }

@@ -1,10 +1,8 @@
 a = ['ponneelan','maruthu','muthu','thangam']
 
-function returnCapitalized(arr){
-    return arr.map((e)=>{
-        e[0].toUpperCase();
-        return e;
-    })
+function returnCapitalized(e){
+    return e[0].toUpperCase() + e.slice(1);
 }
 
-console.log(returnCapitalized(a))
+let capitalized = a.map((val)=>returnCapitalized(val));
+console.log(capitalized)

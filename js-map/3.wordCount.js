@@ -1,12 +1,12 @@
 words = ['hi','hello','hi','how','hi','hello']
 
 function countWord(arr){
-    obj= {}
+    let obj= {}
     arr.map((val)=>{
         if(!(val in obj)){
             obj[val] = 1;
         }else{
-            obj[val] += 1
+            obj[val] = obj[val]+1
         }
     });
     return obj;

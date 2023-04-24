@@ -1,7 +1,7 @@
 function uniqueString(arr){
     let uniq = [];
     arr.map((val)=>{
-        if(!(val in uniq )){
+        if(!(uniq.includes(val) )){
             uniq.push(val)
         }
    })
