@@ -5,7 +5,7 @@ function primeFactors(arr){
         for(i=0;i<=val;i++){
             if(val %i == 0){
                 count++;
-                obj['factor'+count] = i;
+                obj['factor '+count] = i;
             }
         }
         return {numer : val,factors:obj}

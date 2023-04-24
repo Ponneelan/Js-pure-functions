@@ -2,7 +2,8 @@ a = ['ponneelan','maruthu','muthu','thangam']
 
 function returnCapitalized(arr){
     return arr.map((e)=>{
-        return e.toUpperCase();
+        e[0].toUpperCase();
+        return e;
     })
 }
 
