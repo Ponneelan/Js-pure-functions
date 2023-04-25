@@ -1,14 +1,8 @@
-function palindrom(arr){
-    data = arr.filter((val)=>{
-        let letter = val.split('');
-        let arrayOfchar = letter.reverse();
-        let reverse = arrayOfchar.join('');
-        return (val == reverse);
-    });
-    return data;
+function palindrom(val){
+    return (val == val.split('').reverse().join(''));
 }
 
 
-let words = ['amma','malayalam','appa','hello','hi','thagam']
-
-console.log(palindrom(words));
+let words = ['amma','malayalam','appa','hello','hi','thangam']
+let data = words.filter((val)=>palindrom(val));
+console.log(data);

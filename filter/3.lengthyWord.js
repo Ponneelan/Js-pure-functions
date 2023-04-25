@@ -1,10 +1,7 @@
-function getWords(arr,len){
-    words = arr.filter((val)=>{
-        return (val.length >= len)
-    })
-    return words
+function getWords(val,len){
+    return (val.length >= len)
 }
 
 arr = ['hi','hello','hi','how','hi','hello']
-
-console.log(getWords(arr,4));
+let words = arr.filter((val)=>getWords(val,3));
+console.log(words);

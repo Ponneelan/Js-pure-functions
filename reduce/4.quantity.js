@@ -7,5 +7,5 @@ const objects = [
 
   let total = objects.reduce((sum,b)=>{
     return sum+ b.price * b.quantity
-},);
+},0);
   console.log(total)

@@ -1,8 +1,5 @@
-function getData(dates,range1,range2){
-    data = dates.filter((val)=>{
-        return (val>= range1 && val < range2);
-    });
-    return data;
+function getData(val,range1,range2){
+    return (val>= range1 && val < range2);
 }
 
 
@@ -19,4 +16,6 @@ dates = [date1,date2,date3,date4,date5,date6,date7]
 let range1 = new Date(2022,3,25);
 let range2 = new Date(2022,4,26);
 
-console.log(getData(dates,range1,range2));
+let data = dates.filter((val)=>getData(val,range1,range2));
+
+console.log(data);

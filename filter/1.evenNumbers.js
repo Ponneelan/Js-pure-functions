@@ -1,10 +1,8 @@
-function getEvenNymbers(arr){
-    evenNumber = arr.filter((val)=>{
-       return (val % 2 == 0)
-    });
-    return evenNumber;
+function getEvenNymbers(val){
+    return (val % 2 == 0)
 }
 
 arr = [1,2,3,4,5,6,7,8,9,10]
+let evenNumber = arr.filter((val)=>getEvenNymbers(val));
 
-console.log(getEvenNymbers(arr));
+console.log(evenNumber);

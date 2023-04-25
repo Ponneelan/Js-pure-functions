@@ -1,16 +1,11 @@
 str = 'ponneelan'
 
-function countCharacter(text){
-    obj = {}
-    arr = text.split('');
-    arr.map((val)=>{
-        if(val in obj){
-            obj[val] += 1;
-        }else{
-            obj[val] = 1;
-        }
-    });
-    return obj;
+let obj = {};
+let arr = str.split('');
+
+function countCharacter(val){
+    obj[val] = (obj[val]||0) + 1;  
 }
 
-console.log(countCharacter(str))
+let output = arr.map((val)=>{countCharacter(val)});
+console.log(obj);
