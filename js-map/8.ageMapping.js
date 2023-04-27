@@ -1,7 +1,7 @@
 let mapped={};
 function mapAge(val){
     
-    if(!(val.age.toString() in mapped)){
+    if(!(val.age in mapped)){
         mapped[val.age] = [];
     }
     mapped[val.age].push(val.name)
